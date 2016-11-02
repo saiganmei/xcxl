@@ -1,0 +1,15 @@
+E:\TFS\xj\SHIMGE\ExcelLibrary\obj\Debug\ExcelLibrary.dll
+E:\TFS\xj\SHIMGE\ExcelLibrary\obj\Debug\ExcelLibrary.csprojResolveAssemblyReference.cache
+E:\TFS\xj\SHIMGE\ExcelLibrary\bin\Debug\ExcelLibrary.dll
+E:\TFS\xj\SHIMGE\ExcelLibrary\bin\Debug\ExcelLibrary.pdb
+E:\TFS\xj\SHIMGE\ExcelLibrary\obj\Debug\ExcelLibrary.pdb
+E:\TFS\ogawa\wms\ExcelLibrary\bin\Debug\ExcelLibrary.dll
+E:\TFS\ogawa\wms\ExcelLibrary\bin\Debug\ExcelLibrary.pdb
+E:\TFS\ogawa\wms\ExcelLibrary\obj\Debug\ExcelLibrary.csprojResolveAssemblyReference.cache
+E:\TFS\ogawa\wms\ExcelLibrary\obj\Debug\ExcelLibrary.dll
+E:\TFS\ogawa\wms\ExcelLibrary\obj\Debug\ExcelLibrary.pdb
+E:\github\xc\wms\ExcelLibrary\bin\Debug\ExcelLibrary.dll
+E:\github\xc\wms\ExcelLibrary\bin\Debug\ExcelLibrary.pdb
+E:\github\xc\wms\ExcelLibrary\obj\Debug\ExcelLibrary.csprojResolveAssemblyReference.cache
+E:\github\xc\wms\ExcelLibrary\obj\Debug\ExcelLibrary.dll
+E:\github\xc\wms\ExcelLibrary\obj\Debug\ExcelLibrary.pdb

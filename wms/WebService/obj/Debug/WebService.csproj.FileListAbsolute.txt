@@ -1,0 +1,10 @@
+E:\github\xc\wms\WebService\bin\JXWebService.dll.config
+E:\github\xc\wms\WebService\bin\JXWebService.dll
+E:\github\xc\wms\WebService\bin\JXWebService.pdb
+E:\github\xc\wms\WebService\bin\BLL.dll
+E:\github\xc\wms\WebService\bin\UFSoft.U8.Framework.Login.UI.dll
+E:\github\xc\wms\WebService\bin\securityAndRegister.dll
+E:\github\xc\wms\WebService\bin\BLL.pdb
+E:\github\xc\wms\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+E:\github\xc\wms\WebService\obj\Debug\JXWebService.dll
+E:\github\xc\wms\WebService\obj\Debug\JXWebService.pdb

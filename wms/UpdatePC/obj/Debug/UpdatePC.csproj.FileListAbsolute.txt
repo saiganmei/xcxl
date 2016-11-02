@@ -1,0 +1,17 @@
+E:\TFS\xj\SHIMGE\UpdatePC\obj\Debug\UpdatePC.exe
+E:\TFS\xj\SHIMGE\UpdatePC\obj\Debug\UpdateWMS.FrmUpdate.resources
+E:\TFS\xj\SHIMGE\UpdatePC\obj\Debug\UpdatePC.Properties.Resources.resources
+E:\TFS\xj\SHIMGE\UpdatePC\obj\Debug\UpdatePC.csproj.GenerateResource.Cache
+E:\TFS\xj\SHIMGE\UpdatePC\bin\Debug\UpdatePC.exe.config
+E:\TFS\xj\SHIMGE\UpdatePC\bin\Debug\UpdatePC.exe
+E:\TFS\xj\SHIMGE\UpdatePC\bin\Debug\UpdatePC.pdb
+E:\TFS\xj\SHIMGE\UpdatePC\obj\Debug\UpdatePC.pdb
+E:\github\xc\wms\UpdatePC\bin\Debug\UpdatePC.exe.config
+E:\github\xc\wms\UpdatePC\bin\Debug\UpdatePC.exe
+E:\github\xc\wms\UpdatePC\bin\Debug\UpdatePC.pdb
+E:\github\xc\wms\UpdatePC\obj\Debug\UpdateWMS.FrmUpdate.resources
+E:\github\xc\wms\UpdatePC\obj\Debug\UpdatePC.Properties.Resources.resources
+E:\github\xc\wms\UpdatePC\obj\Debug\UpdatePC.csproj.GenerateResource.Cache
+E:\github\xc\wms\UpdatePC\obj\Debug\UpdatePC.exe
+E:\github\xc\wms\UpdatePC\obj\Debug\UpdatePC.pdb
+E:\github\xc\wms\UpdatePC\obj\Debug\UpdatePC.csprojResolveAssemblyReference.cache

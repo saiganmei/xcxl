@@ -1,0 +1,1 @@
+E:\TFS\ogawa\wms\WMS\bin\x64\Debug\SCG_WMS.exe.config

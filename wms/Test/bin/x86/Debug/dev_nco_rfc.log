@@ -1,0 +1,2227 @@
+**** Trace file opened at 2015-05-27 17:44:15 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.200.138, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-27 17:44:15.493
+Failure to create pool for destination test_comba (ORIGINAL) [NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '192.168.49.80:3300' not reached
+TIME        Wed May 27 17:44:15 2015
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 192.168.49.80:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+   在 SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcConfigParameters options)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2015-05-27 17:44:15.568
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '192.168.49.80:3300' not reached
+TIME        Wed May 27 17:44:15 2015
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 192.168.49.80:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+   在 SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcConfigParameters options)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+**** Trace file opened at 2015-05-27 17:45:19 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.150, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-27 17:45:19.713
+Failure to create pool for destination test_comba (ORIGINAL) [NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH]
+SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SYST .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcConfigParameters options)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2015-05-27 17:45:19.768
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SYST .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcConfigParameters options)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+**** Trace file opened at 2015-05-28 10:40:28 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 10:40:28.089
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 10:40:28.121
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 10:43:11 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 10:43:11.297
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 10:43:11.328
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 10:44:14 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 10:44:14.352
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 10:44:14.368
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 10:46:17 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 10:46:17.390
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 10:46:17.421
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 10:46:33 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 10:46:33.458
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 10:46:33.473
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 10:50:42 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 10:50:42.465
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 10:50:42.481
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:00:11 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:00:11.617
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:00:11.632
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:03:31 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:03:31.484
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:03:31.515
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:05:10 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:05:10.310
+Failure to create pool for destination test_comba (ORIGINAL) [NAME=test_comba ASHOST=192.168.49.8 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH]
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '192.168.49.8:3300' not reached
+TIME        Thu May 28 11:05:09 2015
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 192.168.49.8:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+   在 SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcConfigParameters options)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2015-05-28 11:05:10.388
+NAME=test_comba ASHOST=192.168.49.8 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '192.168.49.8:3300' not reached
+TIME        Thu May 28 11:05:09 2015
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 192.168.49.8:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+   在 SAP.Middleware.Connector.CpicConnection.ConnectAsClient(Dictionary`2 options)
+   在 SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcConfigParameters options)
+   在 SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   在 SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   在 SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   在 SAP.Middleware.Connector.RfcDestination.SetAttributeValues(RfcSystemAttributes attribs)
+**** Trace file opened at 2015-05-28 11:05:29 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:05:29.748
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:05:29.764
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:08:18 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:08:18.899
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:08:18.915
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:09:02 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:09:02.922
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:09:02.938
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:09:40 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:09:40.238
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:09:40.253
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:10:20 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:10:20.158
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:10:20.174
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+>> Error entry 2015-05-28 11:10:26.242
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:10:26.273
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+>> Error entry 2015-05-28 11:10:31.874
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:10:31.889
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+>> Error entry 2015-05-28 11:10:38.176
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:10:38.192
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:12:44 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:12:44.240
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:12:44.256
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:14:06 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:14:06.343
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:14:06.359
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:18:38 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:18:38.688
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:18:38.719
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:19:34 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:19:34.630
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:19:34.646
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:32:06 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:32:07.238
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:32:07.253
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 11:32:43 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.180, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 11:32:43.648
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 11:32:43.679
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 13:44:41 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.175, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 13:44:41.279
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 13:44:41.435
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 13:55:18 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.175, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 13:55:18.415
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 13:55:18.447
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 13:58:11 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.175, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 13:58:11.498
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 13:58:11.513
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 14:54:20 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.185, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 14:54:20.164
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=wms_test PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2015-05-28 14:54:20.202
+SAP.Middleware.Connector.RfcInvalidStateException: Lookup of function ZBAPI_GOODSMVT_CREATE_01 metadata failed for destination test_comba ---> SAP.Middleware.Connector.RfcAbapRuntimeException: User WMS_TEST has no RFC authorization for function group SDIFRUNTIME .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcRepository.Execute(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataClassic(String name)
+   在 SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   在 SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+**** Trace file opened at 2015-05-28 15:25:21 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 15:25:21.877
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZMM_FUNGP .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-05-28 15:26:59 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 15:26:59.648
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZMM_FUNGP .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-05-28 15:43:34 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 15:43:34.777
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 15:55:42 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 15:55:42.674
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 15:56:58 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 15:56:58.881
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 15:59:10 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 15:59:10.465
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 16:03:31 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 16:03:31.202
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 16:09:33 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 16:09:33.346
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 16:14:51 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 16:14:51.619
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 16:21:56 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 16:21:56.830
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 16:26:30 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 16:26:30.102
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-05-28 17:00:12 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.189, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-05-28 17:00:12.696
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 10:46:19 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.10, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 10:46:19.379
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: The function module "ZLS_GET_MAT" not released for 'remote' calls.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 10:47:01 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.10, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 10:47:01.598
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: The function module "ZLS_GET_MAT" not released for 'remote' calls.
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 10:52:12 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.10, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 10:52:12.361
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+>> Error entry 2015-06-02 10:52:25.294
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER EX_RETURN of FUNCTION ZLS_LIFNR_NAME_READ (GETTER): cannot convert CHAR1 into IRfcTable ---> System.InvalidCastException: 无法将类型为“System.String”的对象强制转换为类型“SAP.Middleware.Connector.IRfcTable”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+**** Trace file opened at 2015-06-02 10:53:25 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.10, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 10:53:25.796
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 11:02:25 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.10, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 11:02:25.698
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 11:12:18 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.10, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 11:12:18.894
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZLS_FG05 .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 13:34:38 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 13:34:38.275
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZLS_FG05 .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 13:37:41 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 13:37:41.634
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZLS_FG05 .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 14:24:28 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:24:28.826
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZLS_FG05 .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 14:28:13 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:28:13.566
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group ZLS_FG05 .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 14:32:38 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:32:38.592
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:33:29 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:33:29.624
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+>> Error entry 2015-06-02 14:33:32.307
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER AU_HEADER of FUNCTION ZLS_AUFNR_DETAIL_READ (GETTER): cannot convert TABLE [STRUCTURE ZPPS_SCDD] into IRfcStructure ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcTable”的对象强制转换为类型“SAP.Middleware.Connector.IRfcStructure”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+**** Trace file opened at 2015-06-02 14:35:29 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:35:30.007
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:36:50 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:36:50.790
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:38:13 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:38:13.466
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:39:05 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:39:05.371
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+>> Error entry 2015-06-02 14:39:20.454
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER AU_HEADER of FUNCTION ZLS_AUFNR_DETAIL_READ (GETTER): cannot convert TABLE [STRUCTURE ZPPS_SCDD] into IRfcStructure ---> System.InvalidCastException: 无法将类型为“SAP.Middleware.Connector.RfcTable”的对象强制转换为类型“SAP.Middleware.Connector.IRfcStructure”。
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+**** Trace file opened at 2015-06-02 14:40:22 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:40:22.395
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:42:24 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:42:24.380
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:44:08 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:44:08.147
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+>> Error entry 2015-06-02 14:44:20.671
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       no conversation found with id 64334033
+TIME        Tue Jun 02 14:44:20 2015
+RELEASE     720
+COMPONENT   CPIC (TCP/IP) with Unicode
+VERSION     3
+RC          473
+MODULE      r3cpic.c
+LINE        9119
+COUNTER     3
+
+   在 SAP.Middleware.Connector.CpicConnection.CpicSend()
+   在 SAP.Middleware.Connector.CpicConnection.WriteFlush()
+   在 SAP.Middleware.Connector.RfcConnection.WriteFlush()
+   在 SAP.Middleware.Connector.RfcConnection.WriteRfcCallEnd()
+   在 SAP.Middleware.Connector.RfcFunction.RfcSerialize(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-02 14:44:36 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:44:36.775
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-02 14:48:24 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.13, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-02 14:48:24.734
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-03 10:23:56 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.57, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-03 10:23:56.490
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-03 10:25:04 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.57, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-03 10:25:04.630
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+**** Trace file opened at 2015-06-03 10:25:19 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.57, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-03 10:25:19.372
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+>> Error entry 2015-06-03 10:27:57.463
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       no conversation found with id 35239595
+TIME        Wed Jun 03 10:27:57 2015
+RELEASE     720
+COMPONENT   CPIC (TCP/IP) with Unicode
+VERSION     3
+RC          473
+MODULE      r3cpic.c
+LINE        9119
+COUNTER     3
+
+   在 SAP.Middleware.Connector.CpicConnection.CpicSend()
+   在 SAP.Middleware.Connector.CpicConnection.WriteFlush()
+   在 SAP.Middleware.Connector.RfcConnection.WriteFlush()
+   在 SAP.Middleware.Connector.RfcConnection.WriteRfcCallEnd()
+   在 SAP.Middleware.Connector.RfcFunction.RfcSerialize(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-03 10:28:16 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.57, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-03 10:28:16.885
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)
+>> Error entry 2015-06-03 10:28:34.295
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcCommunicationException: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       no conversation found with id 35419257
+TIME        Wed Jun 03 10:28:34 2015
+RELEASE     720
+COMPONENT   CPIC (TCP/IP) with Unicode
+VERSION     3
+RC          473
+MODULE      r3cpic.c
+LINE        9119
+COUNTER     3
+
+   在 SAP.Middleware.Connector.CpicConnection.CpicSend()
+   在 SAP.Middleware.Connector.CpicConnection.WriteFlush()
+   在 SAP.Middleware.Connector.RfcConnection.WriteFlush()
+   在 SAP.Middleware.Connector.RfcConnection.WriteRfcCallEnd()
+   在 SAP.Middleware.Connector.RfcFunction.RfcSerialize(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+>> Error entry 2015-06-03 10:32:29.172
+NAME=test_comba ASHOST=192.168.49.80 CLIENT=600 USER=COMBAWMS PASSWD=******** SYSNR=00 LANG=ZH
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   在 SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   在 SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+**** Trace file opened at 2015-06-03 10:41:56 (UTC+08:00 中国标准时间)
+
+SAP .NET Connector 3.0 with file version 3.0.7.0 running on 32-bit .NET Framework 4.0.30319.18408
+Program: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug\Test.vshost.exe
+Working directory: C:\京信通信\source\JingXinWMS\Test\bin\x86\Debug
+Operating system: Windows Server 2008 R2 Enterprise Server 64-bit Service Pack 1
+Processor: 2x AMD64 (or x64)
+SAP release: 720, Kernel release: 720, Kernel patch level: 218
+Hostname: WIN-BN2LQKG7V6H, IP address: 192.168.250.57, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2015-06-03 10:41:56.918
+SAP.Middleware.Connector.RfcAbapRuntimeException: User COMBAWMS has no RFC authorization for function group SYSU .
+   在 SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   在 SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   在 SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   在 SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   在 SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   在 SAP.Middleware.Connector.RfcConnection.ResetSAPServerContext()
+   在 SAP.Middleware.Connector.RfcSessionState.Dispose(Boolean disposing)

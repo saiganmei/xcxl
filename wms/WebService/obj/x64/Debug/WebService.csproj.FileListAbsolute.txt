@@ -1,0 +1,10 @@
+E:\TFS\ogawa\wms\JXWebService\bin\JXWebService.dll.config
+E:\TFS\ogawa\wms\JXWebService\bin\JXWebService.dll
+E:\TFS\ogawa\wms\JXWebService\bin\JXWebService.pdb
+E:\TFS\ogawa\wms\JXWebService\bin\UFSoft.U8.Framework.Login.UI.dll
+E:\TFS\ogawa\wms\JXWebService\bin\securityAndRegister.dll
+E:\TFS\ogawa\wms\JXWebService\obj\x64\Debug\WebService.csprojResolveAssemblyReference.cache
+E:\TFS\ogawa\wms\JXWebService\obj\x64\Debug\JXWebService.dll
+E:\TFS\ogawa\wms\JXWebService\obj\x64\Debug\JXWebService.pdb
+E:\TFS\ogawa\wms\JXWebService\bin\BLL.dll
+E:\TFS\ogawa\wms\JXWebService\bin\BLL.pdb

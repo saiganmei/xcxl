@@ -1,0 +1,7 @@
+E:\TFS\ogawa\wms\JXBLL\obj\x64\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\TFS\ogawa\wms\JXBLL\bin\x64\Debug\UFSoft.AIF.MOM.Common.MessageObjectModel.xml
+E:\TFS\ogawa\wms\JXBLL\bin\x64\Debug\BLL.dll.config
+E:\TFS\ogawa\wms\JXBLL\bin\x64\Debug\BLL.dll
+E:\TFS\ogawa\wms\JXBLL\bin\x64\Debug\BLL.pdb
+E:\TFS\ogawa\wms\JXBLL\obj\x64\Debug\BLL.dll
+E:\TFS\ogawa\wms\JXBLL\obj\x64\Debug\BLL.pdb
