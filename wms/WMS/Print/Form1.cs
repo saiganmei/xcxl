@@ -23,8 +23,6 @@ namespace WMS.Print
         {
             //TODO: 刷新订单数据
             //MessageBox.Show("123");
-            //MessageBox.Show("456");
-
         }
     }
 }
